@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Work — Your Name</title>
+  <title>Work — Fedor Savinov</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="./index.html" class="brand"><span class="brand-logo">✦</span><span class="brand-text">Your Name</span></a>
+      <a href="./index.html" class="brand"><span class="brand-logo">✦</span><span class="brand-text">Fedor Savinov</span></a>
       <nav class="site-nav">
         <ul>
           <li><a href="./about.html" class="pill">About</a></li>
           <li><a href="./work.html" class="pill">Work</a></li>
           <li><a href="./contact.html" class="pill">Contact</a></li>
-          <li><a href="https://github.com/yourname" target="_blank" rel="noopener" class="pill">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/yourname/" target="_blank" rel="noopener" class="pill">LinkedIn</a></li>
+          <li><a href="https://github.com/Fedia222" target="_blank" rel="noopener" class="pill">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/fedor-savinov-673a8426b" target="_blank" rel="noopener" class="pill">LinkedIn</a></li>
         </ul>
       </nav>
     </div>
@@ -25,42 +25,94 @@
   <main class="site-main">
     <section class="section">
       <div class="container">
-        <div class="section-head">
-          <h1 class="h1">My Work</h1>
-          <a class="btn btn-small" href="./Your-Name-Resume.pdf">View résumé</a>
-        </div>
-        <div class="filters chip-row">
+    
+        <h1 class="h1 section-title">My Work</h1>
+
+    <!-- Подзаголовок со ссылкой на GitHub -->
+          <p class="lead">
+          All my project code is available on my
+          <a href="https://github.com/Fedia222" target="_blank" rel="noopener">GitHub</a>. Here is my <a href="https://www.kaggle.com/fedorsavinov" target="_blank" rel="noopener">Kaggle</a> for reference as well.
+          </p>
+
+    <!-- Фильтры -->
+          <div class="filters chip-row">
           <button class="chip is-active" data-filter="all">All</button>
-          <button class="chip" data-filter="web-apps">Web Apps</button>
-          <button class="chip" data-filter="design-systems">Design Systems</button>
+          <button class="chip" data-filter="data-science">Data Science & ML</button>
           <button class="chip" data-filter="automation">Automation</button>
-        </div>
+          <button class="chip" data-filter="project-management">Project Management</button>
+          </div>
 
         <div class="grid work-grid reveal" id="work-grid">
-          <article class="card work" data-tags="web-apps">
-            <div class="work-media"><img src="./projects/project-1.jpg" alt="Project One" /></div>
-            <div class="work-body">
-              <h3 class="h3">Project One</h3>
-              <p>Short description of what the project does and results achieved.</p>
-              <div class="tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span></div>
-            </div>
+          <article class="card work" data-tags="data-science">
+            <a href="./projects/Stocks_project.html" class="card-link">
+              <div class="work-body">
+                <h3 class="h3">Stocks Analysis</h3>
+                <p>Analyzed and trained models on historical LVMH stock data, optimized fitting, and compared predictions against actual market movements.</p>
+                <div class="tags">
+                  <span class="tag">Data Science & ML</span>
+                </div>
+              </div>
+            </a>
           </article>
-          <article class="card work" data-tags="design-systems">
-            <div class="work-media"><img src="./projects/project-2.jpg" alt="Project Two" /></div>
-            <div class="work-body">
-              <h3 class="h3">Project Two</h3>
-              <p>System of tokens and components at scale.</p>
-              <div class="tags"><span class="tag">Design</span><span class="tag">A11y</span></div>
-            </div>
+
+          <article class="card work" data-tags="data-science">
+            <a href="./projects/Medical_Data_Analysis.html" class="card-link">
+              
+              <div class="work-body">
+                <h3 class="h3">Medical Data Analysis</h3>
+                <p>Built interpretable models to assess the impact of patient demographics and lab indicators on disease onset, using synthetic data and pharmacist collaboration to ensure confidentiality and relevance.</p>
+                <div class="tags">
+                  <span class="tag">Data Science & ML</span>
+                </div>
+              </div>
+            </a>
           </article>
-          <article class="card work" data-tags="automation">
-            <div class="work-media"><img src="./projects/project-3.jpg" alt="Project Three" /></div>
-            <div class="work-body">
-              <h3 class="h3">Project Three</h3>
-              <p>Automation that saves hours of manual work weekly.</p>
-              <div class="tags"><span class="tag">Bots</span><span class="tag">Node</span></div>
-            </div>
+
+          <article class="card work" data-tags="data-science">
+            <a href="./projects/Football_penalty_analysis.html" class="card-link">
+              
+              <div class="work-body">
+                <h3 class="h3">Football penalty data analysis</h3>
+                <p>Performed exploratory analysis on World Cup penalty shootout data—creating distribution visualizations and modeling shot placement dynamics to inform future optimal strategies; currently in progress.</p>
+                <div class="tags">
+                  <span class="tag">Data Science & ML</span>
+                </div>
+              </div>
+            </a>
           </article>
+
+
+          
+
+          <article class="card work" data-tags="automation project-management">
+            <a href="./projects/Workflow_automation.html" class="card-link">
+              
+              <div class="work-body">
+                <h3 class="h3">Smart business automation</h3>
+                <p>Led the design and management of a business automation suite—delivering AI-powered tools for email sorting, automatic draft replies, meeting scheduling, and data retention to streamline daily workflows.</p>
+                <div class="tags">
+                  <span class="tag">Automation</span>
+                  <span class="tag">Project Management</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+
+          <article class="card work" data-tags="data-science">
+            <a href="./projects/Titanic_project.html" class="card-link">
+              
+              <div class="work-body">
+                <h3 class="h3">Titanic ML Foundations</h3>
+                <p>Executed my first ML submission using the Kaggle Titanic dataset—preprocessing data, building a model, and submitting predictions—serving as a hands-on introduction to machine learning and a baseline for future improvements.</p>
+                <div class="tags">
+                <span class="tag">Data Science & ML</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+
         </div>
       </div>
     </section>
@@ -68,7 +120,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      <p>© <span id="year"></span> Fedor Savinov. All rights reserved.</p>
     </div>
   </footer>
   <script src="./main.js" defer></script>
