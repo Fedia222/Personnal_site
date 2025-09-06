@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work — Your Name</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand"><span class="brand-logo">✦</span><span class="brand-text">Your Name</span></a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="./about.html" class="pill">About</a></li>
+          <li><a href="./work.html" class="pill">Work</a></li>
+          <li><a href="./contact.html" class="pill">Contact</a></li>
+          <li><a href="https://github.com/yourname" target="_blank" rel="noopener" class="pill">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/yourname/" target="_blank" rel="noopener" class="pill">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h1 class="h1">My Work</h1>
+          <a class="btn btn-small" href="./Your-Name-Resume.pdf">View résumé</a>
+        </div>
+        <div class="filters chip-row">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="web-apps">Web Apps</button>
+          <button class="chip" data-filter="design-systems">Design Systems</button>
+          <button class="chip" data-filter="automation">Automation</button>
+        </div>
+
+        <div class="grid work-grid reveal" id="work-grid">
+          <article class="card work" data-tags="web-apps">
+            <div class="work-media"><img src="./projects/project-1.jpg" alt="Project One" /></div>
+            <div class="work-body">
+              <h3 class="h3">Project One</h3>
+              <p>Short description of what the project does and results achieved.</p>
+              <div class="tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span></div>
+            </div>
+          </article>
+          <article class="card work" data-tags="design-systems">
+            <div class="work-media"><img src="./projects/project-2.jpg" alt="Project Two" /></div>
+            <div class="work-body">
+              <h3 class="h3">Project Two</h3>
+              <p>System of tokens and components at scale.</p>
+              <div class="tags"><span class="tag">Design</span><span class="tag">A11y</span></div>
+            </div>
+          </article>
+          <article class="card work" data-tags="automation">
+            <div class="work-media"><img src="./projects/project-3.jpg" alt="Project Three" /></div>
+            <div class="work-body">
+              <h3 class="h3">Project Three</h3>
+              <p>Automation that saves hours of manual work weekly.</p>
+              <div class="tags"><span class="tag">Bots</span><span class="tag">Node</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="./main.js" defer></script>
+</body>
+</html>
