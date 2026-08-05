@@ -1,81 +1,143 @@
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects - Fedor Savinov</title>
-  <meta name="description" content="Case study of Medical Data Analysis by Fedor Savinov.">
+  <title>Preterm Birth Risk Test Optimization - Fedor Savinov</title>
+  <meta name="description" content="Case study on the analysis and optimization of a preterm birth risk assessment test using medical data and interpretable machine learning.">
   <link rel="stylesheet" href="../styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
 
-<!-- Optional for Apple / mobile -->
-<link rel="apple-touch-icon" href="../favicon.png">
+  <!-- Optional for Apple / mobile -->
 
-
-
+  <link rel="apple-touch-icon" href="../favicon.png">
 </head>
+
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="../index.html" class="brand"><span class="brand-logo">✦</span><span class="brand-text">Fedor Savinov</span></a>
-      <nav class="site-nav">
-        <ul>
-          <li><a href="../about.html" class="pill">About</a></li>
-          <li><a href="../work.html" class="pill">Work</a></li>
-          <li><a href="../contact.html" class="pill">Contact</a></li>
-          <li><a href="https://github.com/Fedia222" target="_blank" rel="noopener" class="pill">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/fedor-savinov-673a8426b" target="_blank" rel="noopener" class="pill">LinkedIn</a></li>
-        </ul>
-      </nav>
-    </div>
+      <a href="../index.html" class="brand">
+        <span class="brand-logo">✦</span>
+        <span class="brand-text">Fedor Savinov</span>
+      </a>
+
+```
+  <nav class="site-nav">
+    <ul>
+      <li><a href="../about.html" class="pill">About</a></li>
+      <li><a href="../work.html" class="pill">Work</a></li>
+      <li><a href="../contact.html" class="pill">Contact</a></li>
+      <li><a href="https://github.com/Fedia222" target="_blank" rel="noopener" class="pill">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/fedor-savinov-673a8426b" target="_blank" rel="noopener" class="pill">LinkedIn</a></li>
+    </ul>
+  </nav>
+</div>
+```
+
   </header>
 
   <!-- Main -->
+
   <main class="site-main">
     <section class="section">
       <div class="container narrow">
         <a href="../work.html" class="text-link">← Back to Work</a>
-        <h1 class="h1">Medical Data Analysis</h1>
-        <p class="lead">Analyzed patient and lab data to identify key indicators influencing disease onset, then built and tuned models to highlight the most impactful factors.</p>
 
-        <div class="chip-row">
-          <span class="chip">Data Science & ML</span>
-        </div>
 
-        
+    <h1 class="h1">Preterm Birth Risk Test Optimization</h1>
 
-        <div class="prose">
-          <h3 class="h3">Context</h3>
-          <p>In this medical project, I collaborated closely with pharmacists to improve a diagnostic test and determine which patient-related factors (e.g., age, physical activity, smoking habits) or clinical indicators (e.g., blood group, hormone levels) most strongly influence the onset of a specific medical condition. By combining clinical insights with advanced modeling, we aimed to build interpretable, data-driven tools for better risk assessment.</p>
+    <p class="lead">
+      Analyzed confidential patient and laboratory data to identify the factors contributing most strongly to preterm birth risk and support the improvement of an existing medical test.
+    </p>
 
-          
-            <h3 class="h3">Approach</h3>
-            <ul>
-              <li><strong>Data:</strong> Compiled a dataset combining patient demographics (age, lifestyle) with medical test results (blood markers, hormone levels). Since the real data is confidential, I generated a synthetic dataset with zero correlation—allowing anyone to run the code without revealing sensitive information.</li>
-              <li><strong>Methods:</strong> Constructed and optimized multiple models using feature importance techniques (e.g., ensemble models, interpretability tools like SHAP or permutation importance) to identify which variables most strongly influence disease prediction.</li>
-              <li><strong>Management:</strong> Structured the workflow into stages: data processing → model development → feature importance evaluation, ensuring a clear, iterative process of analysis and validation.</li>
-            </ul>
-          
-          <h3 class="h3">Results</h3>
-          <p>The study revealed the most influential predictors of disease risk, providing actionable insights into which patient and laboratory parameters to monitor most closely. This enhanced medical test performance and offered interpretable guidance for clinical decision-making.</p>
-        
-          <div class="card" style="padding:0; margin:24px 0;">
-          <img src="./images/medical.png" alt="Screenshot of the project">
-        </div>
-        
-        </div>
+    <div class="chip-row">
+      <span class="chip">Data Science & ML</span>
+    </div>
+
+    <div class="prose">
+      <h3 class="h3">Context</h3>
+
+      <p>
+        I worked with a pharmaceutical company developing a test to assess the risk of preterm birth. The test combined a wide range of patient-related variables, including lifestyle factors, general health indicators, blood group, hormone levels, and other clinical measurements.
+      </p>
+
+      <p>
+        As the existing test was not performing as expected, the objective was to determine which variables were genuinely informative, identify factors contributing little to the predictions, and provide a more rigorous basis for improving the test.
+      </p>
+
+      <h3 class="h3">Approach</h3>
+
+      <ul>
+        <li>
+          <strong>Confidential medical data:</strong> Analyzed a dataset combining patient demographics, lifestyle information, health indicators, laboratory results, and biological measurements.
+        </li>
+
+        <li>
+          <strong>Feature analysis:</strong> Evaluated the predictive contribution of each variable to identify the factors most strongly associated with preterm birth risk.
+        </li>
+
+        <li>
+          <strong>Model development:</strong> Built, compared, and optimized multiple machine-learning models to assess how different variables and combinations of variables affected predictive performance.
+        </li>
+
+        <li>
+          <strong>Interpretability:</strong> Applied feature-importance and model-explainability techniques, including SHAP and permutation importance, to understand how individual variables influenced model predictions.
+        </li>
+
+        <li>
+          <strong>Workflow:</strong> Structured the project into successive stages: data preparation → exploratory analysis → model development → performance evaluation → feature-importance analysis.
+        </li>
+      </ul>
+
+      <h3 class="h3">Results</h3>
+
+      <p>
+        The analysis highlighted the variables contributing most strongly to the performance of the preterm birth risk test and identified less informative factors that could be removed, reconsidered, or investigated further.
+      </p>
+
+      <p>
+        These findings provided the company with a data-driven basis for refining the test and prioritizing the patient and laboratory indicators used in its development.
+      </p>
+
+      <h3 class="h3">Public Demonstration</h3>
+
+      <p>
+        The original medical data and the detailed results of the analysis are strictly confidential and cannot be shared publicly.
+      </p>
+
+      <p>
+        To make the methodology and code accessible, I generated a fully synthetic dataset reproducing the general structure, variable types, and format of the original data without containing any real patient information.
+      </p>
+
+      <p>
+        The synthetic dataset was intentionally generated without meaningful correlations. It allows users to inspect the expected data structure, run the code, and adapt the analysis pipeline, but the resulting feature importance, model performance, and visualizations are purely illustrative and must not be interpreted as clinical findings.
+      </p>
+
+      <div class="card" style="padding:0; margin:24px 0;">
+        <img
+          src="./images/medical.png"
+          alt="Illustrative machine-learning output generated from synthetic medical data"
+        >
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+```
+
   </main>
 
   <!-- Footer -->
+
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> Fedor Savinov. All rights reserved.</p>
     </div>
   </footer>
+
   <script src="../main.js" defer></script>
+
 </body>
 </html>
