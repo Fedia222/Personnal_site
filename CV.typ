@@ -1,6 +1,6 @@
 // ============================================================
 // CV — FEDOR SAVINOV
-// Data Science & Développement Digital
+// Data Science & Digital Development
 // ============================================================
 
 
@@ -59,7 +59,7 @@
 
 #let section(title) = {
 
-  // Gros espace AVANT le titre
+  // Large space BEFORE the title
   v(11pt, weak: false)
 
   text(
@@ -70,7 +70,7 @@
     #title
   ]
 
-  // Séparation titre -> ligne
+  // Space between title and line
   v(3.2pt, weak: false)
 
   line(
@@ -78,7 +78,7 @@
     stroke: 0.75pt + blue,
   )
 
-  // Séparation ligne -> contenu
+  // Space between line and content
   v(7pt, weak: false)
 }
 
@@ -117,7 +117,7 @@
     ],
   )
 
-  // Institution -> diplôme
+  // Institution -> degree
   v(2.8pt, weak: false)
 
   text(
@@ -129,7 +129,7 @@
 
   if courses != none {
 
-    // Diplôme -> cours
+    // Degree -> coursework
     v(3.5pt, weak: false)
 
     text(
@@ -140,7 +140,7 @@
     ]
   }
 
-  // Espace entre les formations
+  // Space between education entries
   v(8pt, weak: false)
 }
 
@@ -156,10 +156,10 @@
   body,
 ) = {
 
-  // 3 colonnes :
-  // Poste | Entreprise | Date
+  // 3 columns:
+  // Position | Company | Date
   //
-  // Ça empêche l'entreprise de passer sur la ligne suivante.
+  // Prevents the company name from wrapping to a new line.
 
   grid(
     columns: (auto, 1fr, auto),
@@ -193,12 +193,12 @@
     ],
   )
 
-  // Header expérience -> bullets
+  // Experience header -> bullets
   v(4pt, weak: false)
 
   body
 
-  // Vrai espace entre deux expériences
+  // Space between experience entries
   v(8pt, weak: false)
 }
 
@@ -217,7 +217,7 @@
     #title
   ]
 
-  // Sous-titre -> contenu
+  // Subtitle -> content
   v(3.2pt, weak: false)
 
   text(
@@ -246,7 +246,7 @@
     #title
   ]
 
-  // Titre -> technologies
+  // Title -> technologies
   v(2.4pt, weak: false)
 
   text(
@@ -261,7 +261,7 @@
 
   body
 
-  // Entre deux projets
+  // Space between projects
   v(8pt, weak: false)
 }
 
@@ -293,7 +293,7 @@
       weight: "semibold",
       fill: muted,
     )[
-      Mathématiques appliquées · Data Science
+      Applied Mathematics · Data Science
     ]
 
     #v(4.5pt, weak: false)
@@ -302,7 +302,7 @@
       size: 9.5pt,
       fill: very-muted,
     )[
-      Année de césure 2026–2027
+      Gap Year 2026–2027
     ]
   ],
 
@@ -376,11 +376,12 @@
 
 #v(10pt, weak: false)
 
+
 // ============================================================
-// PRESENTATION
+// PROFILE
 // ============================================================
 
-// Header -> présentation
+// Header -> profile
 #v(12pt, weak: false)
 
 #rect(
@@ -397,103 +398,102 @@
     size: 9.6pt,
     fill: muted,
   )[
-    Étudiant en mathématiques appliquées spécialisé en data science,
-    actuellement en année de césure, je développe des projets combinant
-    analyse de données, machine learning et développement d'applications
-    digitales. Je m'intéresse particulièrement à la conception d'outils
-    data de bout en bout, de la structuration et l'analyse des données
-    jusqu'à la restitution d'insights exploitables par les équipes métiers.
+    Applied Mathematics student specializing in Data Science, currently
+    completing a gap year. I develop projects combining data analysis,
+    machine learning, and digital application development. I am particularly
+    interested in building end-to-end data solutions, from data structuring
+    and analysis to delivering actionable insights for business teams.
   ]
 ]
 
 
 // ============================================================
-// FORMATION
+// EDUCATION
 // ============================================================
 
-#section("Formation")
+#section("Education")
 
 #education(
-  "Sorbonne Université – Faculté des Sciences et Ingénierie",
-  "Master 1 Mathématiques Appliquées – parcours Science des Données Avancée",
+  "Sorbonne University – Faculty of Science and Engineering",
+  "Master 1 in Applied Mathematics – Advanced Data Science Track",
   "2025 – 2026",
 
   courses: [
-    Probabilités approfondies ·
-    Statistique computationnelle et Machine Learning ·
-    Statistique avancée en grande dimension ·
-    Bases de l'analyse de données ·
-    Optimisation ·
-    Analyse fonctionnelle ·
+    Advanced Probability ·
+    Computational Statistics and Machine Learning ·
+    Advanced High-Dimensional Statistics ·
+    Foundations of Data Analysis ·
+    Optimization ·
+    Functional Analysis ·
     C++
   ],
 )
 
 #education(
-  "Sorbonne Université – Faculté des Sciences et Ingénierie",
-  "Double Licence Mathématiques & Physique",
+  "Sorbonne University – Faculty of Science and Engineering",
+  "Dual Bachelor's Degree in Mathematics & Physics",
   "2022 – 2025",
 )
 
 
 // ============================================================
-// EXPERIENCE
+// PROFESSIONAL EXPERIENCE
 // ============================================================
 
-#section("Expérience Professionnelle")
+#section("Professional Experience")
 
 #experience(
-  "Fondateur",
+  "Founder",
   "Wots AI",
-  "Mai 2025 – Présent",
+  "May 2025 – Present",
   [
-    - Conception de solutions digitales combinant traitement de données, automatisation et intelligence artificielle.
-    - Développement de prototypes web en HTML, CSS et JavaScript et structuration des flux de données nécessaires aux applications.
-    - Pilotage de projets de bout en bout : analyse des besoins métiers, définition des fonctionnalités, développement, validation et suivi d'indicateurs.
+    - Designed digital solutions combining data processing, automation, and artificial intelligence.
+    - Developed web prototypes in HTML, CSS, and JavaScript and structured the data flows required by applications.
+    - Managed projects end-to-end, from business needs analysis and feature definition to development, validation, and KPI monitoring.
   ],
 )
 
 #experience(
-  "Data Analyst Freelance",
-  "Indépendant",
-  "Mai 2025 – Sept. 2025",
+  "Freelance Data Analyst",
+  "Independent",
+  "May 2025 – Sept. 2025",
   [
-    - Nettoyage, transformation et analyse exploratoire de données avec Python.
-    - Modélisation statistique, automatisation d'analyses et restitution de recommandations quantitatives.
+    - Cleaned, transformed, and performed exploratory analysis on datasets using Python.
+    - Developed statistical models, automated analytical workflows, and delivered quantitative recommendations.
   ],
 )
 
 #experience(
-  "Chef de Projet",
+  "Project Manager",
   "AntexCloud",
   "Sept. 2022 – Nov. 2024",
   [
-    - Coordination d'une équipe de 6 à 10 personnes sur des projets digitaux.
-    - Mise en place de tableaux de bord, suivi d'indicateurs et traduction des besoins métiers en fonctionnalités.
+    - Coordinated a team of 6 to 10 people across digital projects.
+    - Built dashboards, monitored key indicators, and translated business requirements into product features.
   ],
 )
 
 #experience(
-  "Stagiaire Recherche",
-  "Observatoire de Meudon",
-  "Été 2023",
+  "Research Intern",
+  "Meudon Observatory",
+  "Summer 2023",
   [
-    - Développement de simulations numériques N-corps et analyse de données observationnelles.
+    - Developed numerical N-body simulations and analyzed observational data.
   ],
 )
 
 
 // ============================================================
-// COMPETENCES
+// TECHNICAL SKILLS
 // ============================================================
 
-#section("Compétences Techniques")
+#section("Technical Skills")
 
 #grid(
   columns: (1fr, 1fr),
   column-gutter: 27pt,
 
-  // Espace vertical FORCÉ entre les deux lignes
+  // Forced vertical spacing between rows
   row-gutter: 13pt,
 
   [
@@ -508,10 +508,10 @@
 
   [
     #skill-block(
-      "Développement",
+      "Development",
       [
         JavaScript · HTML · CSS · C++ ·
-        Interfaces web · Prototypage · Notions UX/UI
+        Web interfaces · Prototyping · UX/UI fundamentals
       ]
     )
   ],
@@ -521,19 +521,19 @@
       "Data Science",
       [
         Machine Learning · Deep Learning ·
-        Analyse exploratoire · Feature engineering ·
-        Modélisation statistique · Validation de modèles
+        Exploratory Data Analysis · Feature Engineering ·
+        Statistical Modeling · Model Validation
       ]
     )
   ],
 
   [
     #skill-block(
-      "Data & Outils",
+      "Data & Tools",
       [
-        SQL · Pipelines de données · Git · GitHub ·
+        SQL · Data Pipelines · Git · GitHub ·
         Jupyter Notebook · VS Code ·
-        Développement assisté par IA
+        AI-Assisted Development
       ]
     )
   ],
@@ -541,61 +541,60 @@
 
 
 // ============================================================
-// PROJETS
+// PROJECTS
 // ============================================================
 
-#section("Projets Sélectionnés")
+#section("Selected Projects")
 
 #project(
-  "Analyse prédictive de données médicales",
+  "Predictive Analysis of Medical Data",
   "Python · Pandas · NumPy · Scikit-learn · XGBoost",
   [
-    - Analyse de facteurs cliniques et de mode de vie associés au risque d'accouchement prématuré.
-    - Prétraitement, feature engineering, classification et comparaison des performances par validation croisée.
+    - Analyzed clinical and lifestyle factors associated with the risk of preterm birth.
+    - Performed preprocessing, feature engineering, classification, and model comparison using cross-validation.
   ],
 )
 
 #project(
-  "Prévision de séries financières",
+  "Financial Time Series Forecasting",
   "Python · Pandas · Scikit-learn · Matplotlib · C++",
   [
-    - Modèles de régression sur séries temporelles financières, ingénierie de variables et analyse des performances.
+    - Developed regression models for financial time series, including feature engineering and performance analysis.
   ],
 )
 
 
 // ============================================================
-// INFORMATIONS COMPLEMENTAIRES
+// ADDITIONAL INFORMATION
 // ============================================================
 
-#section("Informations Complémentaires")
+#section("Additional Information")
 
 #grid(
-  // Plus large qu'avant pour éviter
-  // "Vie associative" sur 2 lignes
+  // Wide enough to prevent labels from wrapping
   columns: (3.35cm, 1fr),
 
   column-gutter: 10pt,
   row-gutter: 5pt,
 
   [
-    #text(weight: "bold")[Langues]
+    #text(weight: "bold")[Languages]
   ],
   [
-    Français courant · Anglais courant · Russe langue maternelle
+    French — Fluent · English — Fluent · Russian — Native
   ],
 
   [
-    #text(weight: "bold")[Vie associative]
+    #text(weight: "bold")[Student Activities]
   ],
   [
-    Organisation d'événements universitaires de grande envergure
+    Organized large-scale university events
   ],
 
   [
     #text(weight: "bold")[Sports]
   ],
   [
-    Jiu-Jitsu Brésilien · Volleyball · Échecs · tout en compétition
+    Brazilian Jiu-Jitsu · Volleyball · Chess · Competitive level
   ],
 )
