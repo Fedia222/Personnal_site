@@ -3,27 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fedor Savinov — Portfolio</title>
-  <meta name="description" content="Personal site and portfolio of Fedor Savinov: projects, services, and contact." />
-
+  <title>Fedor Savinov — Applied Mathematics & Machine Learning</title>
+  <meta name="description" content="Fedor Savinov's portfolio: applied mathematics, machine learning, scientific computing and clinical data projects. Seeking a research or applied ML internship." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="./styles.css" />
-
-
-  <!-- Standard favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./favicon.png">
-
-<!-- Optional for Apple / mobile -->
-<link rel="apple-touch-icon" href="./favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png">
+  <link rel="apple-touch-icon" href="./favicon.png">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <!-- Shared header on all pages -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <a href="./index.html" class="brand" aria-label="Homepage">
@@ -46,18 +37,17 @@
       </nav>
     </div>
   </header>
-
   <main id="main" class="site-main" role="main">
-    <!-- Hero -->
     <section class="section hero">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="kicker">Data Scientist & Business Owner</p>
+          <p class="kicker">Applied Mathematics · Machine Learning · Scientific Computing</p>
           <h1 class="display">Hi, I’m <span class="grad">Fedor</span>.</h1>
-          <p class="lead">I’m a Data Scientist and entrepreneur building intelligent, accessible solutions. Currently developing my own business and turning data into real-world value.</p>
+          <p class="lead">With a background in Mathematics and Physics and a completed first year of an Applied Mathematics master’s at Sorbonne University, I work on statistical modelling, machine learning and numerical simulation. I’m particularly interested in healthcare and biomedical research.</p>
+          <p class="lead">During my gap year, I’m developing Wots AI and seeking a research or applied machine learning internship.</p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="./work.html"><span>View work</span></a>
-            <a class="btn btn-ghost" href="./CV.pdf"><span>View resume</span></a>
+            <a class="btn btn-primary" href="./work.html"><span>View projects</span></a>
+            <a class="btn btn-ghost" href="./CV.pdf"><span>View CV</span></a>
           </div>
         </div>
         <div class="hero-media parallax">
@@ -66,64 +56,49 @@
         </div>
       </div>
     </section>
-
-    <!-- Focus areas -->
     <section class="section services">
       <div class="container">
         <h2 class="h2 section-title">What I Do</h2>
         <div class="grid services-grid">
           <article class="card service">
-            <h3 class="h3">Data Science and Machine Learning</h3>
-            <p>From exploration to production: analytics, modeling, and insight delivery.</p>
+            <h3 class="h3">Statistical Modelling &amp; Machine Learning</h3>
+            <p>Explore data, compare predictive models and interpret their results, with careful attention to validation.</p>
             <a class="chip" href="./work.html#data-science">Learn more</a>
           </article>
           <article class="card service">
-            <h3 class="h3">Automation</h3>
-            <p>Workflows and systems that save time and reduce errors.</p>
-            <a class="chip" href="./work.html#automation">Learn more</a>
+            <h3 class="h3">Scientific Computing</h3>
+            <p>Use numerical methods and simulations to investigate scientific problems, drawing on my mathematics and physics background.</p>
+            <a class="chip" href="./work.html">Learn more</a>
           </article>
           <article class="card service">
-            <h3 class="h3">Project Management</h3>
-            <p>From scoping to delivery: prioritization, roadmaps, and team management.</p>
-            <a class="chip" href="./work.html#project-management">Learn more</a>
+            <h3 class="h3">AI &amp; Data Systems</h3>
+            <p>Design data workflows and AI architectures around practical requirements, including confidentiality and integration with existing software.</p>
+            <a class="chip" href="./work.html#automation">Learn more</a>
           </article>
         </div>
       </div>
     </section>
-
-
-    <!-- Selected Work -->
     <section class="section selected-work">
       <div class="container">
         <div class="section-head">
-          <h2 class="h2 section-title">Selected Work</h2>
+          <h2 class="h2 section-title">Selected Projects</h2>
           <a class="btn btn-small" href="./work.html">View all</a>
         </div>
         <div class="grid work-grid reveal">
-
-
           <article class="card work" data-tags="data-science">
             <a href="./projects/Medical_Data_Analysis.html" class="card-link">
-              
               <div class="work-body">
                 <h3 class="h3">Preterm Birth Risk Analysis</h3>
-                <p>Built interpretable models to identify the patient and laboratory factors most relevant to preterm birth risk, helping improve an existing assessment test. Public code uses synthetic data only.</p>
-                <div class="tags">
-                  <span class="tag">Data Science & ML</span>
-                </div>
+                <p>Analysed clinical and laboratory data to investigate factors associated with preterm-birth risk and support the refinement of an existing assessment test. The public demonstration uses synthetic data.</p>
+                <div class="tags"><span class="tag">Data Science &amp; ML</span></div>
               </div>
             </a>
           </article>
-
-          
-
-
           <article class="card work" data-tags="automation project-management">
             <a href="./projects/Workflow_automation.html" class="card-link">
-              
               <div class="work-body">
-                <h3 class="h3">Smart business automation</h3>
-                <p>Led the design and management of a business automation suite—delivering AI-powered tools for email sorting, automatic draft replies, meeting scheduling, and data retention to streamline daily workflows.</p>
+                <h3 class="h3">Business Workflow Automation</h3>
+                <p>Led the design of tools for email classification, draft replies and meeting scheduling, translating workflow requirements into automation features.</p>
                 <div class="tags">
                   <span class="tag">Automation</span>
                   <span class="tag">Project Management</span>
@@ -131,34 +106,26 @@
               </div>
             </a>
           </article>
-
           <article class="card work" data-tags="data-science">
             <a href="./projects/Stocks_project.html" class="card-link">
-              
               <div class="work-body">
-                <h3 class="h3">Stocks Analysis</h3>
-                <p>Analyzed and trained models on historical LVMH stock data, optimized fitting, and compared predictions against actual market movements.</p>
-                <div class="tags">
-                  <span class="tag">Data Science & ML</span>
-                </div>
+                <h3 class="h3">Financial Time-Series Modelling</h3>
+                <p>Developed regression models for historical LVMH stock data, with feature engineering and comparative performance analysis, following a quantitative research internship.</p>
+                <div class="tags"><span class="tag">Data Science &amp; ML</span></div>
               </div>
             </a>
           </article>
-
         </div>
       </div>
     </section>
-
-    <!-- CTA -->
     <section class="section cta">
       <div class="container cta-inner reveal">
-        <h2 class="h2">Have a project in mind?</h2>
-        <p>Let’s talk about how I can help. I’m open to collaborations and consulting.</p>
+        <h2 class="h2">Let’s Connect</h2>
+        <p>I’m interested in research and applied ML opportunities, particularly in healthcare and biomedical science. Feel free to get in touch to discuss a project or internship.</p>
         <a class="btn btn-primary" href="./contact.html"><span>Get in touch</span></a>
       </div>
     </section>
   </main>
-
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
       <p>© <span id="year"></span> Fedor Savinov. All rights reserved.</p>
@@ -169,7 +136,6 @@
       </ul>
     </div>
   </footer>
-
   <script src="./main.js" defer></script>
 </body>
 </html>
