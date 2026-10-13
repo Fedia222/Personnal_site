@@ -3,28 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects - Fedor Savinov</title>
-  <meta name="description" content="Case study of Stocks analysis by Fedor Savinov.">
+
+  <title>Stock Market Modelling & Monte Carlo Simulation — Fedor Savinov</title>
+  <meta name="description" content="A personal project extending my internship experience through stock market analysis, Monte Carlo simulation, and predictive modelling in Python and C++.">
+
   <link rel="stylesheet" href="../styles.css">
-
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
-
-<!-- Optional for Apple / mobile -->
-<link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../favicon.png">
 </head>
+
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="../index.html" class="brand"><span class="brand-logo">✦</span><span class="brand-text">Fedor Savinov</span></a>
+      <a href="../index.html" class="brand">
+        <span class="brand-logo">✦</span>
+        <span class="brand-text">Fedor Savinov</span>
+      </a>
+
       <nav class="site-nav">
         <ul>
           <li><a href="../about.html" class="pill">About</a></li>
           <li><a href="../work.html" class="pill">Work</a></li>
           <li><a href="../contact.html" class="pill">Contact</a></li>
-          <li><a href="https://github.com/Fedia222" target="_blank" rel="noopener" class="pill">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/fedor-savinov-673a8426b" target="_blank" rel="noopener" class="pill">LinkedIn</a></li>
+          <li>
+            <a href="https://github.com/Fedia222"
+               target="_blank" rel="noopener" class="pill">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/fedor-savinov-673a8426b"
+               target="_blank" rel="noopener" class="pill">LinkedIn</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -35,34 +45,174 @@
     <section class="section">
       <div class="container narrow">
         <a href="../work.html" class="text-link">← Back to Work</a>
-        <h1 class="h1">Analysis and prediction of a stock</h1>
-        <p class="lead">Constructing model, predicting and using machine learning to predict a stock evolution</p>
+
+        <h1 class="h1">Stock Market Modelling & Monte Carlo Simulation</h1>
+
+        <p class="lead">
+          Exploring stock price dynamics through time series analysis,
+          Monte Carlo simulation, and machine learning, with implementations
+          in Python and C++.
+        </p>
 
         <div class="chip-row">
-          <span class="chip">Data Science & ML</span>
+          <span class="chip">Financial Modelling</span>
+          <span class="chip">Monte Carlo Methods</span>
+          <span class="chip">Time Series</span>
+          <span class="chip">Machine Learning</span>
+          <span class="chip">Python</span>
+          <span class="chip">C++</span>
         </div>
 
-        
         <div class="prose">
-          <h3 class="h3">Context</h3>
-          <p>This project was a personal research initiative aimed at applying machine learning to real-time European stock market data—specifically, LVMH's (Moët Hennessy Louis Vuitton SE) trading on Euronext Paris. Constructing predictive models for stock evolution is vital for understanding market dynamics and making data-driven investment decisions. LVMH, as one of the flagship stocks in the CAC 40 index, provides a representative case study for building financial modeling skills.</p>
+          <h2 class="h3">Overview</h2>
+          <p>
+            This personal project follows on from my internship, extending
+            my interest in numerical methods and computational modelling
+            to financial time series. Using LVMH shares listed on Euronext
+            Paris as a case study, I explored how historical market data
+            can support statistical analysis, stochastic simulation,
+            and predictive modelling.
+          </p>
+          <p>
+            The project combines mathematical modelling with practical
+            implementation. Python supports data preparation, exploratory
+            analysis, and machine learning experiments, while C++ provides
+            a complementary implementation environment for numerical
+            simulation.
+          </p>
 
-          <h3 class="h3">Approach</h3>
+          <h2 class="h3">Objectives</h2>
           <ul>
-            <li><strong>Data:</strong> Collected real-time price data from Euronext Paris for LVMH, cleaned and structured time series features (e.g., daily prices, volume, moving averages).</li>
-            <li><strong>Methods:</strong> Built predictive models using regression and ensemble algorithms (e.g., Random Forest), tuned hyperparameters, and evaluated performance using validation sets to select the best-fitting model.</li>
-            <li><strong>Management:</strong> Organized the project into phases: data acquisition, preprocessing, exploratory analysis, model development, evaluation, and deployment. Set milestones for each phase to ensure steady progress.</li>
+            <li>
+              Analyse historical prices and trading volumes to explore
+              trends, variability, and changes in market behaviour.
+            </li>
+            <li>
+              Use Monte Carlo methods to investigate a range of possible
+              stock price trajectories under chosen modelling assumptions.
+            </li>
+            <li>
+              Explore regression and ensemble methods for predicting
+              stock price evolution from historical features.
+            </li>
+            <li>
+              Develop practical experience translating numerical methods
+              into Python and C++ code.
+            </li>
           </ul>
 
-          <h3 class="h3">Results</h3>
-          <p>This project sharpened my skills in efficient machine learning and hands-on use of financial APIs. I mastered the use of the Python <code>yfinance</code> library to reliably fetch historical stock data for modeling. Beyond code, I gained deeper proficiency in data analysis, model evaluation, and workflow automation—essential skills for turning raw data into actionable insights.</p>
-        
-        
-        <div class="card" style="padding:0; margin:24px 0;">
-          <img src="./images/stocks.png" alt="Screenshot of the project">
-        </div>
+          <h2 class="h3">Data & Preparation</h2>
+          <p>
+            Historical market data was retrieved using the Python
+            <code>yfinance</code> library, with LVMH as the main asset
+            studied. The workflow involved cleaning and organising
+            observations into a consistent time series suitable for
+            visualisation and modelling.
+          </p>
+          <p>
+            Prices, trading volumes, and derived features such as moving
+            averages provided the basis for exploratory analysis and
+            predictive experiments. Working with these data also highlighted
+            the importance of distinguishing historical observations
+            from the assumptions used to model future behaviour.
+          </p>
 
-        
+          <h2 class="h3">Modelling Approach</h2>
+
+          <h3 class="h3">Exploratory Time Series Analysis</h3>
+          <p>
+            The first stage focused on understanding the observed series
+            before fitting models. Price movements, trading activity,
+            and moving averages were examined to describe the data and
+            guide feature preparation.
+          </p>
+
+          <h3 class="h3">Monte Carlo Simulation</h3>
+          <p>
+            Monte Carlo methods formed the stochastic simulation component
+            of the project. Repeated random sampling allows a model to
+            generate multiple possible trajectories and explore the
+            variability of future outcomes.
+          </p>
+          <p>
+            This perspective complements point prediction by making
+            uncertainty explicit. The resulting scenarios remain conditional
+            on the model and its parameters: they illustrate possible
+            behaviour within those assumptions rather than establish
+            what the market will do.
+          </p>
+
+          <h3 class="h3">Machine Learning</h3>
+          <p>
+            Predictive experiments included regression and ensemble
+            approaches such as Random Forest. The workflow covered
+            feature preparation, model fitting, hyperparameter tuning,
+            and evaluation on validation data.
+          </p>
+          <p>
+            These experiments explored whether patterns in historical
+            observations could provide useful predictive information,
+            alongside the simulation-based view of stock price dynamics.
+          </p>
+
+          <h2 class="h3">Implementation</h2>
+          <ul>
+            <li>
+              <strong>Python:</strong> Data acquisition with
+              <code>yfinance</code>, preprocessing, visualisation,
+              numerical experimentation, and machine learning.
+            </li>
+            <li>
+              <strong>C++:</strong> Implementation of numerical simulation
+              components, extending the project beyond the Python workflow.
+            </li>
+            <li>
+              <strong>Project organisation:</strong> Work structured around
+              data acquisition, exploratory analysis, simulation, predictive
+              modelling, and evaluation.
+            </li>
+          </ul>
+
+          <h2 class="h3">Outcomes & Learning</h2>
+          <p>
+            The project brought together financial data analysis,
+            Monte Carlo methods, and machine learning in a practical
+            modelling workflow. It strengthened my experience working
+            with market data APIs and translating mathematical ideas
+            into executable code.
+          </p>
+          <p>
+            Using both Python and C++ also broadened my experience
+            implementing numerical methods across languages. As a
+            continuation of my internship, the project provided an
+            opportunity to develop these skills independently in
+            a new application domain.
+          </p>
+
+          <div class="card" style="padding:0; margin:24px 0; overflow:hidden;">
+            <img
+              src="./images/stocks.png"
+              alt="Visual output from the stock market analysis and modelling project"
+              loading="lazy"
+              style="display:block; width:100%; height:auto;"
+            >
+          </div>
+
+          <h2 class="h3">Limitations & Further Work</h2>
+          <p>
+            A study centred on one stock provides limited evidence about
+            how well an approach generalises. Financial relationships can
+            change over time, and simulation results depend on assumptions
+            that may not capture abrupt market movements.
+          </p>
+          <p>
+            Further work could include chronological walk-forward
+            evaluation, comparisons with a simple no-change forecast,
+            testing across several assets and market periods, and
+            benchmarking the Python and C++ simulation implementations.
+            These extensions would help assess both predictive robustness
+            and computational efficiency.
+          </p>
         </div>
       </div>
     </section>
@@ -71,9 +221,12 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Fedor Savinov. All rights reserved.</p>
+      <p>
+        © <span id="year"></span> Fedor Savinov. All rights reserved.
+      </p>
     </div>
   </footer>
+
   <script src="../main.js" defer></script>
 </body>
 </html>

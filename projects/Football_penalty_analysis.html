@@ -3,29 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects - Fedor Savinov</title>
-  <meta name="description" content="Case study of Football Data Shootout by Fedor Savinov.">
+  <title>Statistical Modelling of Football Penalty Shootouts - Fedor Savinov</title>
+  <meta
+    name="description"
+    content="A university project exploring football penalty shootouts through statistical analysis, probability distributions and modelling of shooting and goalkeeping strategies."
+  >
   <link rel="stylesheet" href="../styles.css">
 
-    <!-- Standard favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
-
-<!-- Optional for Apple / mobile -->
-<link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../favicon.png">
 </head>
+
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="../index.html" class="brand"><span class="brand-logo">✦</span><span class="brand-text">Fedor Savinov</span></a>
+      <a href="../index.html" class="brand">
+        <span class="brand-logo" aria-hidden="true">✦</span>
+        <span class="brand-text">Fedor Savinov</span>
+      </a>
+
       <nav class="site-nav">
         <ul>
           <li><a href="../about.html" class="pill">About</a></li>
           <li><a href="../work.html" class="pill">Work</a></li>
           <li><a href="../contact.html" class="pill">Contact</a></li>
-          <li><a href="https://github.com/Fedia222" target="_blank" rel="noopener" class="pill">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/fedor-savinov-673a8426b" target="_blank" rel="noopener" class="pill">LinkedIn</a></li>
+          <li>
+            <a href="https://github.com/Fedia222"
+               target="_blank" rel="noopener" class="pill">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/fedor-savinov-673a8426b"
+               target="_blank" rel="noopener" class="pill">LinkedIn</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -36,29 +47,177 @@
     <section class="section">
       <div class="container narrow">
         <a href="../work.html" class="text-link">← Back to Work</a>
-        <h1 class="h1">Football Penalties shootout data analysis</h1>
-        <p class="lead">Exploring historical World Cup penalty shootout data to visualize shot patterns and begin modeling optimal strategies for shooters and keepers — work in progress.</p>
+
+        <h1 class="h1">Statistical Modelling of Football Penalty Shootouts</h1>
+
+        <p class="lead">
+          A university project exploring historical World Cup penalty
+          shootouts through statistics and probability, with the aim of
+          understanding shot patterns and modelling strategies that
+          maximise the probability of scoring or saving a penalty.
+        </p>
 
         <div class="chip-row">
-          <span class="chip">Data Science & ML</span>
-        
+          <span class="chip">University Project</span>
+          <span class="chip">Statistics &amp; Probability</span>
+          <span class="chip">In Progress</span>
         </div>
-
-        
 
         <div class="prose">
           <h3 class="h3">Context</h3>
-          <p>I’m analyzing past FIFA World Cup penalty shootouts through data exploration, distribution studies, and visual analytics. The goal is to understand patterns in penalty-taking—where players shoot and how goalkeepers react—with hopes of one day modeling optimal shot placement or goalkeeper strategy.</p>
 
-          <h3 class="h3">Approach</h3>
+          <p>
+            I started this project as part of my university studies to
+            apply statistical and probabilistic methods to a concrete
+            decision-making problem: football penalty shootouts.
+            Historical data provides a way to explore where players
+            shoot, how goalkeepers react and how these choices relate
+            to the outcome.
+          </p>
+
+          <p>
+            Beyond describing past penalties, the project asks how these
+            observations could inform the next decision. Given a model
+            of the goalkeeper’s behaviour and the shooter’s chances of
+            success in different zones, where should the next penalty
+            be aimed?
+          </p>
+
+          <h3 class="h3">Exploratory Analysis</h3>
+
           <ul>
-            <li><strong>Data:</strong> Compiled historical World Cup shootout data (e.g., shot zones, outcomes, kick sequence), enriched with domain-specific features and visual distributions.</li>
-            <li><strong>Analysis:</strong> Exploratory modeling with distribution plots, event heatmaps, and basic predictive patterns; planning for deeper modeling—e.g. success probabilities of shot zones.</li>
-            <li><strong>Vision:</strong> Aiming to inform both takers (best spot to shoot) and goalkeepers (optimal dive strategies), based on statistical and visual insights from real-world data.</li>
+            <li>
+              <strong>Data preparation:</strong>
+              Organising historical World Cup shootout data, including
+              shot zones, outcomes and kick sequence, into a format
+              suitable for statistical analysis.
+            </li>
+
+            <li>
+              <strong>Descriptive statistics:</strong>
+              Examining shot frequencies and observed scoring rates
+              across different areas of the goal.
+            </li>
+
+            <li>
+              <strong>Visual exploration:</strong>
+              Using distribution plots and spatial visualisations to
+              investigate shooting patterns and goalkeeper behaviour.
+            </li>
+
+            <li>
+              <strong>Comparisons:</strong>
+              Exploring relationships between shot placement,
+              goalkeeper decisions and penalty outcomes, where the
+              available data supports these comparisons.
+            </li>
           </ul>
 
-          <h3 class="h3">Results</h3>
-          <p>Initial exploratory visualizations highlight non-uniform shot distributions and suggest goalkeepers favor certain areas. As the analysis progresses, I expect to transition from descriptive insights toward predictive modeling of penalty outcomes.</p>
+          <h3 class="h3">Probabilistic Modelling</h3>
+
+          <p>
+            The modelling direction is to represent shooting zones and
+            goalkeeper choices as discrete random variables, and the
+            outcome of a penalty as a binary variable: goal or no goal.
+            This provides a framework for moving from observed
+            frequencies to estimated probability distributions.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Discrete distributions:</strong>
+              Model the probabilities of shooting towards different
+              zones and of the goalkeeper choosing different directions.
+            </li>
+
+            <li>
+              <strong>Conditional probabilities:</strong>
+              Estimate the probability of scoring given the shot zone
+              and, when recorded, the goalkeeper’s response.
+            </li>
+
+            <li>
+              <strong>Bernoulli and binomial models:</strong>
+              Use a Bernoulli model for an individual penalty outcome
+              and consider a binomial model for repeated comparable
+              attempts when independence and a common success
+              probability are reasonable assumptions.
+            </li>
+
+            <li>
+              <strong>Statistical uncertainty:</strong>
+              Assess how sample size and variability affect the
+              reliability of estimated scoring probabilities,
+              particularly for rarely targeted zones.
+            </li>
+          </ul>
+
+          <h3 class="h3">From Probabilities to Strategy</h3>
+
+          <p>
+            A central objective is to compare possible shot placements
+            by their estimated probability of success. For each zone,
+            the model would combine the possible goalkeeper responses
+            with the probability of scoring against each response.
+            The zone with the highest resulting probability would be
+            the preferred choice under that model.
+          </p>
+
+          <p>
+            The same reasoning can be explored from the goalkeeper’s
+            perspective: how should a goalkeeper choose a direction
+            given the distribution of the opponent’s shots?
+            A further extension is to study mixed strategies, where
+            choices are randomised to avoid becoming predictable.
+          </p>
+
+          <p>
+            Any recommendation depends on the model assumptions and
+            available information. An apparent advantage in historical
+            data may not generalise to a particular player, goalkeeper
+            or match situation, especially if opponents adapt their
+            behaviour.
+          </p>
+
+          <h3 class="h3">Current Progress &amp; Next Steps</h3>
+
+          <p>
+            The work so far focuses on data exploration, descriptive
+            statistics and initial visualisations. These analyses
+            provide the basis for developing and evaluating the
+            probabilistic models.
+          </p>
+
+          <ul>
+            <li>
+              Formalise the probability distributions and estimate
+              conditional scoring probabilities.
+            </li>
+            <li>
+              Quantify uncertainty and examine whether observed
+              differences are supported by enough data.
+            </li>
+            <li>
+              Compare model-based strategies with simple baseline
+              choices and evaluate them on held-out data where feasible.
+            </li>
+            <li>
+              Explore whether kick sequence or previous attempts add
+              useful information, rather than assuming that successive
+              penalties are dependent.
+            </li>
+          </ul>
+
+          <h3 class="h3">What I Am Learning</h3>
+
+          <p>
+            This project connects exploratory data analysis,
+            probability distributions, statistical estimation and
+            decision-making under uncertainty. It also highlights the
+            importance of distinguishing an observed pattern from a
+            reliable prediction, and a model-based strategy from one
+            demonstrated to work in practice.
+          </p>
         </div>
       </div>
     </section>
@@ -70,6 +229,7 @@
       <p>© <span id="year"></span> Fedor Savinov. All rights reserved.</p>
     </div>
   </footer>
+
   <script src="../main.js" defer></script>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fedor Savinov — Applied Mathematics & Machine Learning</title>
-  <meta name="description" content="Fedor Savinov's portfolio: applied mathematics, machine learning, scientific computing and clinical data projects. Seeking a research or applied ML internship." />
+  <title>Fedor Savinov — Applied Mathematics &amp; Machine Learning</title>
+  <meta name="description" content="Fedor Savinov — applied mathematics, machine learning and scientific computing. Explore projects in tennis simulation, clinical data analysis and financial modelling, and view my CV." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -43,8 +43,8 @@
         <div class="hero-copy">
           <p class="kicker">Applied Mathematics · Machine Learning · Scientific Computing</p>
           <h1 class="display">Hi, I’m <span class="grad">Fedor</span>.</h1>
-          <p class="lead">With a background in Mathematics and Physics and a completed first year of an Applied Mathematics master’s at Sorbonne University, I work on statistical modelling, machine learning and numerical simulation. I’m particularly interested in healthcare and biomedical research.</p>
-          <p class="lead">During my gap year, I’m developing Wots AI and seeking a research or applied machine learning internship.</p>
+          <p class="lead">I work on statistical modelling, machine learning and numerical simulation. I hold a dual bachelor’s degree in mathematics and physics and have completed the first year of my Applied Mathematics master’s at Sorbonne University, specialising in Advanced Data Science.</p>
+          <p class="lead">During my gap year, I’m developing <a href="./projects/Workflow_automation.html">Wots AI</a> and seeking a research or applied ML internship, with a particular interest in scientific and biomedical applications.</p>
           <div class="cta-row">
             <a class="btn btn-primary" href="./work.html"><span>View projects</span></a>
             <a class="btn btn-ghost" href="./CV.pdf"><span>View CV</span></a>
@@ -62,18 +62,18 @@
         <div class="grid services-grid">
           <article class="card service">
             <h3 class="h3">Statistical Modelling &amp; Machine Learning</h3>
-            <p>Explore data, compare predictive models and interpret their results, with careful attention to validation.</p>
-            <a class="chip" href="./work.html#data-science">Learn more</a>
+            <p>Build informative features, explore statistical structure and compare models, with attention to interpretability, evaluation and the limits of the data.</p>
+            <a class="chip" href="./projects/Medical_Data_Analysis.html">Explore clinical data analysis</a>
           </article>
           <article class="card service">
             <h3 class="h3">Scientific Computing</h3>
-            <p>Use numerical methods and simulations to investigate scientific problems, drawing on my mathematics and physics background.</p>
-            <a class="chip" href="./work.html">Learn more</a>
+            <p>Use numerical methods and probabilistic simulation to study complex systems, drawing on my mathematics and physics background.</p>
+            <a class="chip" href="./projects/Tennis_Modelling.html">Explore Monte Carlo simulation</a>
           </article>
           <article class="card service">
-            <h3 class="h3">AI &amp; Data Systems</h3>
-            <p>Design data workflows and AI architectures around practical requirements, including confidentiality and integration with existing software.</p>
-            <a class="chip" href="./work.html#automation">Learn more</a>
+            <h3 class="h3">AI, Data &amp; Infrastructure</h3>
+            <p>Through Wots AI, help scope AI and ML solutions, data workflows and deployment architectures, with attention to integration, performance and data control.</p>
+            <a class="chip" href="./projects/Workflow_automation.html">Discover Wots AI</a>
           </article>
         </div>
       </div>
@@ -82,26 +82,29 @@
       <div class="container">
         <div class="section-head">
           <h2 class="h2 section-title">Selected Projects</h2>
-          <a class="btn btn-small" href="./work.html">View all</a>
+          <a class="btn btn-small" href="./work.html">View all projects</a>
         </div>
         <div class="grid work-grid reveal">
+          <article class="card work" data-tags="data-science">
+            <a href="./projects/Tennis_Modelling.html" class="card-link">
+              <div class="work-body">
+                <h3 class="h3">Tennis Modelling &amp; Monte Carlo Simulation</h3>
+                <p>A university project combining player profiling, PCA and clustering with Elo-based modelling and Monte Carlo simulation to explore match outcomes, tournament probabilities and surface effects.</p>
+                <div class="tags">
+                  <span class="tag">Statistical Modelling</span>
+                  <span class="tag">Monte Carlo</span>
+                </div>
+              </div>
+            </a>
+          </article>
           <article class="card work" data-tags="data-science">
             <a href="./projects/Medical_Data_Analysis.html" class="card-link">
               <div class="work-body">
                 <h3 class="h3">Preterm Birth Risk Analysis</h3>
-                <p>Analysed clinical and laboratory data to investigate factors associated with preterm-birth risk and support the refinement of an existing assessment test. The public demonstration uses synthetic data.</p>
-                <div class="tags"><span class="tag">Data Science &amp; ML</span></div>
-              </div>
-            </a>
-          </article>
-          <article class="card work" data-tags="automation project-management">
-            <a href="./projects/Workflow_automation.html" class="card-link">
-              <div class="work-body">
-                <h3 class="h3">Business Workflow Automation</h3>
-                <p>Led the design of tools for email classification, draft replies and meeting scheduling, translating workflow requirements into automation features.</p>
+                <p>Analysed patient and laboratory data with interpretable machine-learning models to support the refinement of an existing risk assessment test. The public demonstration uses synthetic data only.</p>
                 <div class="tags">
-                  <span class="tag">Automation</span>
-                  <span class="tag">Project Management</span>
+                  <span class="tag">Clinical Data</span>
+                  <span class="tag">Interpretable ML</span>
                 </div>
               </div>
             </a>
@@ -110,8 +113,11 @@
             <a href="./projects/Stocks_project.html" class="card-link">
               <div class="work-body">
                 <h3 class="h3">Financial Time-Series Modelling</h3>
-                <p>Developed regression models for historical LVMH stock data, with feature engineering and comparative performance analysis, following a quantitative research internship.</p>
-                <div class="tags"><span class="tag">Data Science &amp; ML</span></div>
+                <p>Developed regression models for historical LVMH stock data, with feature engineering and comparative performance analysis. A project developed following a quantitative research internship.</p>
+                <div class="tags">
+                  <span class="tag">Time Series</span>
+                  <span class="tag">Regression</span>
+                </div>
               </div>
             </a>
           </article>
@@ -121,7 +127,7 @@
     <section class="section cta">
       <div class="container cta-inner reveal">
         <h2 class="h2">Let’s Connect</h2>
-        <p>I’m interested in research and applied ML opportunities, particularly in healthcare and biomedical science. Feel free to get in touch to discuss a project or internship.</p>
+        <p>I’m looking for a research or applied ML internship where I can contribute to modelling, data analysis and scientific computing. I’m particularly interested in healthcare, biomedical research, energy and applied RnD, and open to other quantitative problems.</p>
         <a class="btn btn-primary" href="./contact.html"><span>Get in touch</span></a>
       </div>
     </section>

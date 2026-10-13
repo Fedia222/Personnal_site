@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survival &amp; Health-Risk Modelling - Fedor Savinov</title>
+  <meta name="description" content="An ongoing project exploring NHANES data linked to mortality, with survival analysis, statistical modelling and risk prediction.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-logo" aria-hidden="true">✦</span>
+        <span class="brand-text">Fedor Savinov</span>
+      </a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="../about.html" class="pill">About</a></li>
+          <li><a href="../work.html" class="pill">Work</a></li>
+          <li><a href="../contact.html" class="pill">Contact</a></li>
+          <li><a href="https://github.com/Fedia222" target="_blank" rel="noopener" class="pill">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/fedor-savinov-673a8426b" target="_blank" rel="noopener" class="pill">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="site-main">
+    <section class="section">
+      <div class="container narrow">
+        <a href="../work.html" class="text-link">← Back to Work</a>
+        <h1 class="h1">Survival &amp; Health-Risk Modelling from Population Data</h1>
+        <p class="lead">An ongoing personal project using NHANES data linked to mortality to explore survival patterns and develop models of health-related risk.</p>
+        <div class="chip-row">
+          <span class="chip">Data Science &amp; ML</span>
+          <span class="chip">Survival Analysis</span>
+          <span class="chip">In Progress</span>
+        </div>
+        <div class="prose">
+          <h3 class="h3">Context</h3>
+          <p>I started this project to deepen my understanding of statistical modelling with population health data. The working dataset combines NHANES participant characteristics and health measurements with mortality follow-up, allowing me to study both whether an event occurred and the time observed before that event or the end of follow-up.</p>
+          <p>My initial analysis focuses on age, sex and body mass index. The aim is to build a clear analytical workflow, starting with data exploration and progressing towards survival models and risk prediction.</p>
+          <h3 class="h3">Research Objectives</h3>
+          <ul>
+            <li><strong>Describe survival patterns:</strong> Explore how observed survival varies across demographic and health-related groups.</li>
+            <li><strong>Model associations:</strong> Investigate how participant characteristics relate to mortality while accounting for follow-up time and right censoring.</li>
+            <li><strong>Evaluate risk predictions:</strong> Assess whether future models can distinguish levels of risk and produce calibrated estimates at a defined prediction horizon.</li>
+          </ul>
+          <h3 class="h3">Work Completed</h3>
+          <ul>
+            <li><strong>Dataset preparation:</strong> Loaded and organised the working dataset, including participant identifiers, demographic variables, BMI, follow-up duration and mortality indicators.</li>
+            <li><strong>Outcome construction:</strong> Prepared follow-up and event variables, including versions restricted to a five-year horizon.</li>
+            <li><strong>Exploratory analysis:</strong> Examined participant characteristics and BMI distributions to understand the data before modelling.</li>
+            <li><strong>Survival exploration:</strong> Produced initial Kaplan–Meier curves by sex to explore observed survival over time.</li>
+            <li><strong>Implementation:</strong> Organised the analysis in Python scripts and saved figures for documentation and further review.</li>
+          </ul>
+          <h3 class="h3">Current Status</h3>
+          <p>The project is currently at the data-preparation and exploratory-analysis stage. Initial figures help describe the working sample and guide subsequent modelling; predictive performance and adjusted associations have not yet been established.</p>
+          <p>I am using this stage to check variable definitions, follow-up handling and the analytical choices needed before fitting models.</p>
+          <!-- Add actual exported figures here once their filenames and captions are ready. -->
+          <h3 class="h3">Next Steps</h3>
+          <ul>
+            <li><strong>Cox proportional hazards model:</strong> Fit an interpretable baseline model and examine its assumptions, including proportional hazards.</li>
+            <li><strong>Validation:</strong> Define a reproducible evaluation protocol, with preprocessing fitted on training data and performance assessed on held-out observations.</li>
+            <li><strong>Discrimination and calibration:</strong> Evaluate risk ranking and agreement between predicted and observed outcomes at the chosen horizon, accounting for censoring.</li>
+            <li><strong>Survey design:</strong> Determine how sampling weights, strata and clusters should be incorporated for each analysis and distinguish sample-level exploration from population-level estimation.</li>
+            <li><strong>Model comparison:</strong> Once the baseline is established, consider more flexible survival models and assess whether their added complexity improves performance.</li>
+          </ul>
+          <h3 class="h3">Methodological Perspective</h3>
+          <p>My focus is on understanding the data and establishing a reliable statistical baseline before introducing more complex machine-learning approaches. Particular attention will go to censoring, missing data, model assumptions and reproducibility.</p>
+          <p>The analysis investigates associations and predictive patterns; it is not designed to establish causal effects. This page will be updated as models, evaluation results and documented findings become available.</p>
+          <h3 class="h3">Tools</h3>
+          <p>Python · Pandas · NumPy · Matplotlib · Kaplan–Meier estimation</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Fedor Savinov. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="../main.js" defer></script>
+</body>
+</html>

@@ -3,29 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects - Fedor Savinov</title>
-  <meta name="description" content="Case study of Stocks analysis by Fedor Savinov.">
+
+  <title>Titanic — Machine Learning Foundations | Fedor Savinov</title>
+  <meta name="description" content="My first hands-on machine learning project: exploring preprocessing, feature engineering, and classification techniques on the Kaggle Titanic dataset.">
+
   <link rel="stylesheet" href="../styles.css">
-
-
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
-
-<!-- Optional for Apple / mobile -->
-<link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../favicon.png">
 </head>
+
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="../index.html" class="brand"><span class="brand-logo">✦</span><span class="brand-text">Fedor Savinov</span></a>
+      <a href="../index.html" class="brand">
+        <span class="brand-logo">✦</span>
+        <span class="brand-text">Fedor Savinov</span>
+      </a>
+
       <nav class="site-nav">
         <ul>
           <li><a href="../about.html" class="pill">About</a></li>
           <li><a href="../work.html" class="pill">Work</a></li>
           <li><a href="../contact.html" class="pill">Contact</a></li>
-          <li><a href="https://github.com/Fedia222" target="_blank" rel="noopener" class="pill">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/fedor-savinov-673a8426b" target="_blank" rel="noopener" class="pill">LinkedIn</a></li>
+          <li>
+            <a href="https://github.com/Fedia222"
+               target="_blank" rel="noopener" class="pill">GitHub</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/fedor-savinov-673a8426b"
+               target="_blank" rel="noopener" class="pill">LinkedIn</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -36,28 +45,174 @@
     <section class="section">
       <div class="container narrow">
         <a href="../work.html" class="text-link">← Back to Work</a>
-        <h1 class="h1">Titanic ML Foundations</h1>
-        <p class="lead">Completed a first machine learning submission in the Kaggle Titanic competition to familiarize myself with ML workflows; plan to revisit later using advanced techniques to improve my score.</p>
+
+        <h1 class="h1">Titanic — Machine Learning Foundations</h1>
+
+        <p class="lead">
+          My first hands-on machine learning case study, using a classic
+          dataset to explore preprocessing, feature engineering, and
+          classification through practical experimentation.
+        </p>
 
         <div class="chip-row">
-          <span class="chip">Data Science & ML</span>
+          <span class="chip">Data Science &amp; ML</span>
+          <span class="chip">Classification</span>
+          <span class="chip">Feature Engineering</span>
+          <span class="chip">Python</span>
+          <span class="chip">Kaggle</span>
         </div>
 
-        
-
         <div class="prose">
-          <h3 class="h3">Context</h3>
-          <p>My very first ML project: a beginner-friendly Kaggle competition (Titanic — Machine Learning from Disaster), where the goal is to predict survival of Titanic passengers using features like age, sex, passenger class, and others :contentReference[oaicite:0]{index=0}. It’s a classic introductory task widely used to learn data preprocessing, model training and evaluation. I chose it to build hands-on experience in ML and plan to return later with more advanced techniques to improve my performance.</p>
+          <h2 class="h3">Overview</h2>
+          <p>
+            This was my first practical machine learning project.
+            I chose the Kaggle Titanic competition as a familiar,
+            well-documented starting point for learning how to move
+            from raw data to a working predictive model.
+          </p>
+          <p>
+            Beyond completing an initial submission, I used the dataset
+            as a testing ground for different techniques. Its manageable
+            size allowed me to experiment with data preparation,
+            feature engineering, and classification approaches while
+            keeping the underlying problem easy to understand.
+          </p>
 
-          <h3 class="h3">Approach</h3>
+          <h2 class="h3">Objectives</h2>
           <ul>
-            <li><strong>Data:</strong> Loaded and explored Kaggle’s Titanic dataset—including train/test splits with passenger attributes such as age, sex, fare, class, etc. :contentReference[oaicite:1]{index=1}</li>
-            <li><strong>Methods:</strong> Preprocessed data (e.g., filled missing ages, encoded categorical features), trained a simple classification model (e.g., logistic regression), evaluated on validation set and submitted predictions to Kaggle leaderboard.</li>
-            <li><strong>Learning Outcome:</strong> Went through the full ML pipeline—from loading CSVs, preprocessing, modeling to submission—gaining practical familiarity with each step.</li>
+            <li>
+              Build a complete supervised learning workflow, from
+              exploratory analysis to prediction submission.
+            </li>
+            <li>
+              Test different approaches to missing values, categorical
+              encoding, and feature construction.
+            </li>
+            <li>
+              Experiment with classification models and examine how
+              modelling choices affect validation performance.
+            </li>
+            <li>
+              Establish practical foundations for more specialised
+              machine learning projects.
+            </li>
           </ul>
 
-          <h3 class="h3">Results</h3>
-          <p>The project served as a comprehensive hands-on introduction to ML application. My initial submission yielded a baseline score, serving as a reference point. I aim to revisit this challenge in the future using feature engineering and advanced models to enhance predictive performance.</p>
+          <h2 class="h3">Dataset &amp; Task</h2>
+          <p>
+            The task is binary classification: predicting whether a
+            Titanic passenger survived using the available passenger
+            information. The dataset includes numerical and categorical
+            variables such as age, sex, passenger class, fare,
+            embarkation port, and family relationships aboard the ship.
+          </p>
+          <p>
+            The labelled training data supports model development and
+            local evaluation, while the separate unlabelled test set
+            is used to generate predictions for submission to Kaggle.
+            Missing observations and mixed variable types make the
+            dataset a useful introduction to practical preprocessing.
+          </p>
+
+          <h2 class="h3">Approach</h2>
+
+          <h3 class="h3">Exploratory Analysis</h3>
+          <p>
+            I began by inspecting the dataset, examining variable
+            distributions, and identifying missing values. Exploring
+            how passenger characteristics related to survival helped
+            guide the preparation of model inputs.
+          </p>
+
+          <h3 class="h3">Preprocessing &amp; Feature Engineering</h3>
+          <p>
+            I experimented with different ways to prepare the data,
+            including filling missing values and encoding categorical
+            features. This helped me understand how preprocessing
+            decisions influence the information available to a model.
+          </p>
+          <p>
+            Feature engineering provided another area for experimentation:
+            I explored how changing the representation of passenger
+            information could affect predictions, rather than relying
+            only on the original columns.
+          </p>
+
+          <h3 class="h3">Classification Experiments</h3>
+          <p>
+            An initial model provided a baseline for subsequent
+            experiments. I then tested different classification
+            techniques and modelling choices, using the same underlying
+            task to explore their behaviour.
+          </p>
+          <p>
+            This iterative process gave me practical experience moving
+            between data preparation, model training, and evaluation.
+            It also helped develop my understanding of model complexity
+            and the risk of fitting patterns that do not generalise.
+          </p>
+
+          <h3 class="h3">Evaluation &amp; Kaggle Submission</h3>
+          <p>
+            I evaluated models on a validation set and prepared
+            predictions for the Kaggle test data. Producing a submission
+            completed the workflow, from loading the source CSV files
+            to exporting predictions in the required format.
+          </p>
+          <p>
+            The initial submission established a reference point for
+            further experimentation and helped me become familiar with
+            the practical steps involved in a machine learning competition.
+          </p>
+
+          <h2 class="h3">Implementation</h2>
+          <ul>
+            <li>
+              <strong>Language:</strong> Python for data exploration,
+              preprocessing, model training, and prediction generation.
+            </li>
+            <li>
+              <strong>Workflow:</strong> Load data, explore variables,
+              prepare features, train and evaluate models, then
+              export a submission.
+            </li>
+            <li>
+              <strong>Experimentation:</strong> Use a common dataset
+              to test different techniques and explore the effect
+              of individual modelling decisions.
+            </li>
+          </ul>
+
+          <h2 class="h3">Outcomes &amp; Learning</h2>
+          <p>
+            The project resulted in my first completed Kaggle submission
+            and a practical introduction to the full machine learning
+            workflow. It gave me the opportunity to test a range of
+            techniques on a well-known problem before applying these
+            skills to more specialised datasets.
+          </p>
+          <p>
+            The main learning outcome was understanding how the stages
+            of a project depend on one another: data exploration informs
+            preprocessing, feature representation influences model
+            behaviour, and evaluation determines how results should
+            be interpreted.
+          </p>
+
+          <h2 class="h3">Limitations &amp; Further Work</h2>
+          <p>
+            This project was primarily a learning exercise on a small,
+            widely studied dataset. Performance on this task alone
+            provides limited evidence about how an approach would
+            generalise to other problems.
+          </p>
+          <p>
+            Further work could include more systematic cross-validation,
+            reusable preprocessing pipelines, and a structured comparison
+            of feature sets and model configurations. These extensions
+            would make the experiments easier to reproduce and their
+            results easier to compare.
+          </p>
         </div>
       </div>
     </section>
@@ -66,9 +221,12 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Fedor Savinov. All rights reserved.</p>
+      <p>
+        © <span id="year"></span> Fedor Savinov. All rights reserved.
+      </p>
     </div>
   </footer>
+
   <script src="../main.js" defer></script>
 </body>
 </html>

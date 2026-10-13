@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tennis Player Profiling &amp; Monte Carlo Simulation - Fedor Savinov</title>
+  <meta name="description" content="A university project combining tennis player profiling, PCA, clustering, Elo-based modelling and Monte Carlo simulation of matches and tournaments.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-logo" aria-hidden="true">✦</span>
+        <span class="brand-text">Fedor Savinov</span>
+      </a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="../about.html" class="pill">About</a></li>
+          <li><a href="../work.html" class="pill">Work</a></li>
+          <li><a href="../contact.html" class="pill">Contact</a></li>
+          <li><a href="https://github.com/Fedia222" target="_blank" rel="noopener" class="pill">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/fedor-savinov-673a8426b" target="_blank" rel="noopener" class="pill">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="site-main">
+    <section class="section">
+      <div class="container narrow">
+        <a href="../work.html" class="text-link">← Back to Work</a>
+        <h1 class="h1">Tennis Player Profiling &amp; Monte Carlo Simulation</h1>
+        <p class="lead">A university data-analysis project exploring how player statistics, surface and recent form can be combined to model tennis matches and simulate tournament outcomes.</p>
+        <div class="chip-row">
+          <span class="chip">University Project</span>
+          <span class="chip">Statistical Modelling</span>
+          <span class="chip">Unsupervised Learning</span>
+          <span class="chip">Monte Carlo Simulation</span>
+        </div>
+        <div class="prose">
+          <h3 class="h3">Context</h3>
+          <p>Can the playing styles we recognise on a tennis court also emerge from the data? This was the starting question of my university project, completed in May 2026. I built statistical player profiles and explored whether they formed meaningful groups, such as strong servers, baseline attackers or more defensive players.</p>
+          <p>The clustering results only partly supported this idea. Rather than forcing the data into fixed categories, I shifted the focus towards a probabilistic framework: using player characteristics alongside Elo ratings, surface and recent form to simulate matches and tournaments.</p>
+
+          <h3 class="h3">Building Comparable Player Profiles</h3>
+          <p>I harmonised historical professional tennis data across sources, normalising player names and surface labels, converting dates and handling missing values before aggregating match statistics into player-level features.</p>
+          <ul>
+            <li><strong>Serve:</strong> Ace rate and the proportion of first-serve points won.</li>
+            <li><strong>Return:</strong> The proportion of return points won.</li>
+            <li><strong>Aggression and consistency:</strong> Winners and unforced errors per point.</li>
+            <li><strong>Net play:</strong> The proportion of points won at the net.</li>
+          </ul>
+          <p>These profiles provided a quantitative representation of strengths and weaknesses, supporting both exploratory visualisation and the interpretation of simulated outcomes.</p>
+
+          <h3 class="h3">Exploring Structure with PCA and Clustering</h3>
+          <p>I used principal component analysis (PCA) to visualise player profiles in two and three dimensions, then applied KMeans to the projected data. I also explored additional components, up to 15 dimensions, and a hierarchical dendrogram to examine whether the structure depended on the representation.</p>
+          <p>With six clusters, chosen to compare against six intended player profiles, the silhouette score was approximately <strong>0.30</strong>. This suggested moderate structure with overlapping groups. More automatic cluster selection often favoured two groups, which appeared to reflect differences in era and overall level more than distinct playing styles.</p>
+          <p><strong>The key finding:</strong> statistical proximity does not necessarily imply the same playing style. I compared cluster assignments with style labels interpreted from dominant player characteristics and retained the profiles as continuous descriptions rather than treating the clusters as a definitive classification.</p>
+
+          <h3 class="h3">From Player Profiles to Match Simulation</h3>
+          <p>An initial model translated relative player strengths into win probabilities using a simple strength ratio. Its limitations motivated an Elo-inspired, nonlinear formulation based on differences in adjusted strength, incorporating global Elo, surface-specific Elo, recent form and selected profile features.</p>
+          <p>The simulation then modelled tennis at the level of individual points, using service-point probabilities informed by surface, form and serve/return statistics. Points were assembled into games, tie-breaks, sets and matches, preserving the structure of tennis scoring.</p>
+          <p>For tournament simulation, winners advanced through the draw round by round. Repeated <strong>Monte Carlo simulations</strong> produced estimated probabilities of reaching later rounds or winning the tournament, expressed as frequencies across simulated runs.</p>
+
+          <h3 class="h3">Retrospective Results</h3>
+          <p>In the report’s evaluation of the four 2015 Grand Slam tournaments, simulated winners matched the observed winners in <strong>313 of 508 matches (61.6%)</strong>.</p>
+          <ul>
+            <li><strong>Australian Open:</strong> 63.78% accuracy.</li>
+            <li><strong>Roland-Garros:</strong> 62.20% accuracy.</li>
+            <li><strong>Wimbledon:</strong> 57.48% accuracy.</li>
+            <li><strong>US Open:</strong> 62.99% accuracy.</li>
+          </ul>
+          <p>Aggregated by surface, accuracy was 63.39% on hard courts, 62.20% on clay and 57.48% on grass. These differences identified grass-court predictions as a priority for further investigation; they do not, by themselves, establish why the model performed differently across surfaces.</p>
+
+          <h3 class="h3">Error Analysis and Validation Limits</h3>
+          <p>A revealing error was the Wimbledon 2015 final: the model favoured Federer and assigned Djokovic, the eventual winner, only around 7.2% probability of victory. This highlighted a potentially overconfident prediction and motivated closer scrutiny of how surface adaptation and serve-related features were weighted.</p>
+          <p>The reported accuracy describes the retrospective experiment. A stronger assessment would require an explicit chronological evaluation protocol, ensuring every feature uses only information available before each match, together with comparisons against simpler baselines such as Elo alone. Accuracy also needs to be complemented by probability calibration and scoring rules such as log loss or the Brier score.</p>
+          <p>The report does not establish how much each feature group improves prediction independently. Ablation studies and evaluation across more seasons would help separate the contributions of Elo, form, surface and player profiles.</p>
+
+          <h3 class="h3">Additional Exploration</h3>
+          <p>I also used the player profiles to explore complementary pairings and compare surface-specific rankings. The pairing analysis considered differences between player strengths rather than individual level alone. It remained an exploratory extension, separate from the main match-prediction model.</p>
+
+          <h3 class="h3">What This Project Demonstrates</h3>
+          <p>This project connects data preparation, feature engineering, unsupervised learning and probabilistic simulation in a single analytical workflow. Its most useful lesson was methodological: when an initial hypothesis was only partly supported, I revised the research question and reused the representation in a more suitable model.</p>
+          <p>Further work could investigate style matchups, fatigue and within-match dynamics, while testing whether added complexity improves predictions under a stricter validation protocol.</p>
+
+          <h3 class="h3">Methods</h3>
+          <p>Feature engineering · PCA · KMeans · Hierarchical exploration · Elo-based modelling · Point-by-point simulation · Monte Carlo methods · Error analysis</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Fedor Savinov. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="../main.js" defer></script>
+</body>
+</html>
